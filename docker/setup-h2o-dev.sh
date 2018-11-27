@@ -36,13 +36,6 @@ apt-get install -y nodejs
 # Install R
 apt-get install -y --force-yes r-base r-base-dev
 
-# Install PhantomJS
-wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
-tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/
-rm phantomjs-2.1.1-linux-x86_64.tar.bz2
-ln -sf /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin
-apt-get clean 
-
 # Install python dependancies
 wget https://raw.githubusercontent.com/h2oai/h2o-3/master/h2o-py/requirements.txt
 /usr/bin/pip install --upgrade pip
