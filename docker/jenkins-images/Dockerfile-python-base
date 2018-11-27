@@ -2,6 +2,12 @@ ARG GPU_SUFFIX=''
 ARG FROM_VERSION
 FROM docker.h2o.ai/opsh2oai/h2o-3/dev-jdk-8-base${GPU_SUFFIX}:${FROM_VERSION}
 
+# Install nodeJS
+RUN \
+  curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
+  apt-get update -q -y && \
+  apt-get install -y nodejs
+
 RUN \
     add-apt-repository -y ppa:deadsnakes && \
     apt-get update && \
