@@ -13,7 +13,6 @@ RUN \
         texlive-bibtex-extra \
         texlive-formats-extra \
         texlive-generic-extra \
-        npm \
         python-virtualenv \
         nodejs && \
     apt-get clean && \
