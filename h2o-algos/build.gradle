@@ -31,7 +31,6 @@ dependencies {
     exclude group: 'com.github.fommil.netlib', module: 'all'
   }
 
-
   // Test dependencies only
   testCompile "junit:junit:${junitVersion}"
   testCompile project(path: ":h2o-core", configuration: "testArchives")
